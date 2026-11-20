@@ -1,0 +1,69 @@
+{
+  "params": {
+    "zeta": 0.1,
+    "half_spread": 0.075,
+    "fixed_half": 0.12,
+    "as_gamma": 0.5,
+    "as_kappa": 5.0,
+    "n_episodes": 100,
+    "seed": 7
+  },
+  "results": {
+    "random": {
+      "n_episodes": 100,
+      "mean_pnl": -178.3947572265665,
+      "std_pnl": 77.08533903433006,
+      "sharpe": -2.3142501474517503,
+      "mean_nd_pnl": -1189.2983815104435,
+      "mean_pnlmap": -376.6279281205505,
+      "mean_pr": -2.8202567162590766,
+      "mean_max_drawdown": 184.80446562500347,
+      "mean_abs_inv": 0.49225870646766173,
+      "mean_final_abs_inv": 0.7121999999999998,
+      "win_rate": 0.01,
+      "mean_fills": 62.33
+    },
+    "fixed": {
+      "n_episodes": 100,
+      "mean_pnl": 14.945600000001646,
+      "std_pnl": 66.69209344922342,
+      "sharpe": 0.22409852843171885,
+      "mean_nd_pnl": 99.63733333334432,
+      "mean_pnlmap": 33.06888537676624,
+      "mean_pr": 1.9465371289829567,
+      "mean_max_drawdown": 62.45509999999766,
+      "mean_abs_inv": 1.224126368159204,
+      "mean_final_abs_inv": 2.2255,
+      "win_rate": 0.51,
+      "mean_fills": 8.09
+    },
+    "as": {
+      "n_episodes": 100,
+      "mean_pnl": 8.382749999998087,
+      "std_pnl": 20.657987503322886,
+      "sharpe": 0.4057873497430329,
+      "mean_nd_pnl": 55.88499999998725,
+      "mean_pnlmap": 30.923159122707876,
+      "mean_pr": 3.620586790382252,
+      "mean_max_drawdown": 15.962350000000178,
+      "mean_abs_inv": 0.2647601990049751,
+      "mean_final_abs_inv": 0.6147,
+      "win_rate": 0.32,
+      "mean_fills": 1.64
+    },
+    "ppo": {
+      "n_episodes": 100,
+      "mean_pnl": 19.112500000005085,
+      "std_pnl": 73.75594885329338,
+      "sharpe": 0.2591316401883923,
+      "mean_nd_pnl": 127.41666666670058,
+      "mean_pnlmap": 30.46334877062295,
+      "mean_pr": 1.962157020256796,
+      "mean_max_drawdown": 68.04704999999923,
+      "mean_abs_inv": 1.3924208955223878,
+      "mean_final_abs_inv": 2.2266000000000004,
+      "win_rate": 0.58,
+      "mean_fills": 12.24
+    }
+  }
+}

@@ -1,0 +1,29 @@
+== 1. mid-move distribution (train) ==
+  P(|d mid| >= 0.005) = 0.0007
+  P(|d mid| >= 0.010) = 0.0002
+  P(|d mid| >= 0.015) = 0.0001
+  P(|d mid| >= 0.020) = 0.0001
+  P(|d mid| >= 0.030) = 0.0001
+  P(|d mid| >= 0.050) = 0.0000
+  per-step |d mid|: median 0.00000 mean 0.00021 std 0.00531
+  market half-spread in use: 0.0005 (= 0.1 x per-step std)
+== 2. reward scales under a random policy (20 train eps) ==
+  mean |dPnL|/step = 0.00010
+  mean |TP|/step   = 0.00007
+  mean inv^2       = 0.46
+  -> zeta for IP ~ 20% of |dPnL|: 0.00004 (paper value 0.01; env default 7e-05)
+== 3. fixed-spread grid (20 train eps, mean PnL) ==
+  fixed half=0.000: mean_pnl=-0.0072 sharpe=-0.74 fills=10.3 win=0.10
+  fixed half=0.001: mean_pnl=-0.0072 sharpe=-0.74 fills=10.3 win=0.10
+  fixed half=0.001: mean_pnl=-0.0015 sharpe=-0.18 fills=6.8 win=0.30
+  fixed half=0.001: mean_pnl=+0.0008 sharpe=+0.14 fills=5.3 win=0.40
+== 4. AS grid (20 train eps, mean PnL) ==
+  AS g=0.5 k=500.0: mean_pnl=-0.0016 sharpe=-0.29 fills=5.2 win=0.15 |inv|=0.34
+  AS g=0.5 k=1000.0: mean_pnl=-0.0016 sharpe=-0.29 fills=5.2 win=0.15 |inv|=0.34
+  AS g=0.5 k=2000.0: mean_pnl=-0.0090 sharpe=-1.00 fills=8.6 win=0.00 |inv|=0.53
+  AS g=2.0 k=500.0: mean_pnl=-0.0018 sharpe=-0.31 fills=5.2 win=0.15 |inv|=0.34
+  AS g=2.0 k=1000.0: mean_pnl=-0.0018 sharpe=-0.31 fills=5.2 win=0.15 |inv|=0.34
+  AS g=2.0 k=2000.0: mean_pnl=-0.0089 sharpe=-0.93 fills=8.2 win=0.00 |inv|=0.48
+  AS g=5.0 k=500.0: mean_pnl=-0.0028 sharpe=-0.39 fills=5.4 win=0.15 |inv|=0.30
+  AS g=5.0 k=1000.0: mean_pnl=-0.0028 sharpe=-0.39 fills=5.4 win=0.15 |inv|=0.30
+  AS g=5.0 k=2000.0: mean_pnl=-0.0088 sharpe=-0.93 fills=7.8 win=0.00 |inv|=0.43

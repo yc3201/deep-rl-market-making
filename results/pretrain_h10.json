@@ -1,0 +1,25 @@
+{
+  "model": "attn-lob",
+  "horizon": 10,
+  "seq_size": 50,
+  "n_features": 40,
+  "epochs": 3,
+  "batch": 64,
+  "lr": 0.001,
+  "seed": 0,
+  "n_params": 70243,
+  "train_windows": 20000,
+  "val_windows": 5000,
+  "test_windows": 10000,
+  "best_val_macro_f1": 0.257919476803597,
+  "test": {
+    "macro_f1": 0.27784906100548235,
+    "accuracy": 0.7146,
+    "per_class_f1": [
+      0.0,
+      0.833547183016447,
+      0.0
+    ],
+    "n": 10000
+  }
+}

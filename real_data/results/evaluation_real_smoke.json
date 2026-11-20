@@ -1,0 +1,69 @@
+{
+  "params": {
+    "zeta": 0.1,
+    "half_spread": 0.075,
+    "fixed_half": 0.12,
+    "as_gamma": 0.5,
+    "as_kappa": 5.0,
+    "n_episodes": 50,
+    "seed": 7
+  },
+  "results": {
+    "random": {
+      "n_episodes": 50,
+      "mean_pnl": -202.5632109375063,
+      "std_pnl": 71.94059018915546,
+      "sharpe": -2.8157012669051094,
+      "mean_nd_pnl": -1350.4214062500419,
+      "mean_pnlmap": -417.6123451131835,
+      "mean_pr": -2.960346876857043,
+      "mean_max_drawdown": 206.64048183594335,
+      "mean_abs_inv": 0.4930248756218905,
+      "mean_final_abs_inv": 0.5042,
+      "win_rate": 0.0,
+      "mean_fills": 69.22
+    },
+    "fixed": {
+      "n_episodes": 50,
+      "mean_pnl": 21.14590000000045,
+      "std_pnl": 67.93750067297171,
+      "sharpe": 0.31125519470887963,
+      "mean_nd_pnl": 140.97266666666965,
+      "mean_pnlmap": 38.64965617510884,
+      "mean_pr": 2.648640697486582,
+      "mean_max_drawdown": 54.92050000000338,
+      "mean_abs_inv": 1.2172835820895522,
+      "mean_final_abs_inv": 2.1630000000000003,
+      "win_rate": 0.56,
+      "mean_fills": 7.88
+    },
+    "as": {
+      "n_episodes": 50,
+      "mean_pnl": 5.522099999998663,
+      "std_pnl": 20.323795095652535,
+      "sharpe": 0.27170614415316047,
+      "mean_nd_pnl": 36.81399999999109,
+      "mean_pnlmap": 18.61291278482779,
+      "mean_pr": 3.010903809523342,
+      "mean_max_drawdown": 14.553500000000495,
+      "mean_abs_inv": 0.2692109452736318,
+      "mean_final_abs_inv": 0.5216,
+      "win_rate": 0.28,
+      "mean_fills": 1.36
+    },
+    "ppo": {
+      "n_episodes": 50,
+      "mean_pnl": 5.414999999997749,
+      "std_pnl": 21.30257078382845,
+      "sharpe": 0.2541946723213553,
+      "mean_nd_pnl": 36.099999999984995,
+      "mean_pnlmap": 18.588514620137875,
+      "mean_pr": 2.736906666666247,
+      "mean_max_drawdown": 16.844100000000434,
+      "mean_abs_inv": 0.3178547263681592,
+      "mean_final_abs_inv": 0.5886,
+      "win_rate": 0.32,
+      "mean_fills": 1.58
+    }
+  }
+}

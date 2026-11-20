@@ -1,0 +1,69 @@
+{
+  "params": {
+    "zeta": 7e-05,
+    "half_spread": 0.0005,
+    "fixed_half": 0.001,
+    "as_gamma": 0.5,
+    "as_kappa": 1000.0,
+    "n_episodes": 50,
+    "seed": 7
+  },
+  "results": {
+    "random": {
+      "n_episodes": 50,
+      "mean_pnl": -0.003907186417881502,
+      "std_pnl": 0.005557821827584523,
+      "sharpe": -0.7030067783910228,
+      "mean_nd_pnl": -3.907186417881502,
+      "mean_pnlmap": -0.03529183265374443,
+      "mean_pr": -0.0007687997353104488,
+      "mean_max_drawdown": 0.004205484002636378,
+      "mean_abs_inv": 0.1793034825870647,
+      "mean_final_abs_inv": 0.28,
+      "win_rate": 0.02,
+      "mean_fills": 3.72
+    },
+    "fixed": {
+      "n_episodes": 50,
+      "mean_pnl": -0.0006855113315583194,
+      "std_pnl": 0.003462904604082576,
+      "sharpe": -0.1979584799275553,
+      "mean_nd_pnl": -0.6855113315583194,
+      "mean_pnlmap": -0.0031578397461332584,
+      "mean_pr": -0.0002577066558883618,
+      "mean_max_drawdown": 0.0026883875465393415,
+      "mean_abs_inv": 0.31492537313432833,
+      "mean_final_abs_inv": 0.44,
+      "win_rate": 0.2,
+      "mean_fills": 1.52
+    },
+    "as": {
+      "n_episodes": 50,
+      "mean_pnl": -0.0007259580004761279,
+      "std_pnl": 0.003452991351196738,
+      "sharpe": -0.21024031821699332,
+      "mean_nd_pnl": -0.725958000476128,
+      "mean_pnlmap": -0.0031892803067805077,
+      "mean_pr": -0.0002583386133501173,
+      "mean_max_drawdown": 0.0026449163839053626,
+      "mean_abs_inv": 0.3045771144278607,
+      "mean_final_abs_inv": 0.42,
+      "win_rate": 0.18,
+      "mean_fills": 1.5
+    },
+    "ppo": {
+      "n_episodes": 50,
+      "mean_pnl": -0.004800288184881419,
+      "std_pnl": 0.0059899525667673195,
+      "sharpe": -0.8013900162605222,
+      "mean_nd_pnl": -4.80028818488142,
+      "mean_pnlmap": -0.05002748303197482,
+      "mean_pr": -0.0008115724624193745,
+      "mean_max_drawdown": 0.00481049403548261,
+      "mean_abs_inv": 0.13323383084577115,
+      "mean_final_abs_inv": 0.18,
+      "win_rate": 0.0,
+      "mean_fills": 4.58
+    }
+  }
+}

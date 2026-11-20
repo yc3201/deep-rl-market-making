@@ -1,0 +1,55 @@
+{
+  "params": {
+    "zeta": 0.1,
+    "half_spread": 0.075,
+    "fixed_half": 0.12,
+    "as_gamma": 0.5,
+    "as_kappa": 5.0,
+    "n_episodes": 100,
+    "seed": 7
+  },
+  "results": {
+    "random": {
+      "n_episodes": 100,
+      "mean_pnl": -188.25509589843608,
+      "std_pnl": 81.28400282728545,
+      "sharpe": -2.3160165512326683,
+      "mean_nd_pnl": -1255.0339726562406,
+      "mean_pnlmap": -388.1744795558446,
+      "mean_pr": -2.8807942499091292,
+      "mean_max_drawdown": 195.59008632812547,
+      "mean_abs_inv": 0.5132024875621891,
+      "mean_final_abs_inv": 0.6596000000000001,
+      "win_rate": 0.01,
+      "mean_fills": 64.53
+    },
+    "fixed": {
+      "n_episodes": 100,
+      "mean_pnl": 14.945600000001646,
+      "std_pnl": 66.69209344922342,
+      "sharpe": 0.22409852843171885,
+      "mean_nd_pnl": 99.63733333334432,
+      "mean_pnlmap": 33.06888537676624,
+      "mean_pr": 1.9465371289829567,
+      "mean_max_drawdown": 62.45509999999766,
+      "mean_abs_inv": 1.224126368159204,
+      "mean_final_abs_inv": 2.2255,
+      "win_rate": 0.51,
+      "mean_fills": 8.09
+    },
+    "as": {
+      "n_episodes": 100,
+      "mean_pnl": 8.382749999998087,
+      "std_pnl": 20.657987503322886,
+      "sharpe": 0.4057873497430329,
+      "mean_nd_pnl": 55.88499999998725,
+      "mean_pnlmap": 30.923159122707876,
+      "mean_pr": 3.620586790382252,
+      "mean_max_drawdown": 15.962350000000178,
+      "mean_abs_inv": 0.2647601990049751,
+      "mean_final_abs_inv": 0.6147,
+      "win_rate": 0.32,
+      "mean_fills": 1.64
+    }
+  }
+}

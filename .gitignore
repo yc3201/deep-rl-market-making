@@ -1,0 +1,11 @@
+# LOBSTER raw samples and derived arrays (re-downloadable / regenerable)
+real_data/raw/
+real_data/data/
+# Model checkpoints and prediction dumps (large; JSON metrics are kept)
+*.pt
+*.npz
+# Run logs
+*.log
+*.out
+__pycache__/
+*.pyc

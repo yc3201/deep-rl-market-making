@@ -1,0 +1,26 @@
+{
+  "model": "attn-lob",
+  "data": "LOBSTER AAPL 2012-06-21",
+  "horizon_steps": 10,
+  "seq_size": 50,
+  "n_features": 40,
+  "epochs": 8,
+  "batch": 64,
+  "lr": 0.001,
+  "seed": 0,
+  "n_params": 70243,
+  "train_windows": 4791,
+  "val_windows": 598,
+  "test_windows": 997,
+  "best_val_macro_f1": 0.2582834222018796,
+  "test": {
+    "macro_f1": 0.202127551393022,
+    "accuracy": 0.41323971915747243,
+    "per_class_f1": [
+      0.0,
+      0.023346303501945526,
+      0.5830363506771205
+    ],
+    "n": 997
+  }
+}
